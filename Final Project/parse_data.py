@@ -11,6 +11,34 @@ class Parse_data:
         self.id_to_sentence = self.get_id_to_sentence_dict()
         self.sem_eval2007_id_to_emotions = self.get_sem_eval2007_id_to_emotions()
 
+
+
+    def normalize_data(self):
+
+        #each instance has id, sentence, v, a, d
+        v_instances = []
+        a_instances = []
+        d_instances = []
+        with open(self.reader_path) as csv_file:
+            csv_reader = csv.reader(csv_file, delimiter='Parse_data,')
+            line_count = 0
+
+            #row is in the form: 0: id, 1:v, 2:a, 3:d, 4:stdV, 5:stdA, 6:stdD, 7:N
+            for row in csv_reader:
+                if line_count == 0:
+                    print(f'Column names are {", ".join(row)}')
+                    line_count += 1
+                else:
+                    if not row[0].startswith(SemEval_prefix):
+                            v_instances.append(float(row[1]))
+                            a_instances.append(float(row[2]))
+                            d_instances.append(float(row[3]))
+                    line_count += 1
+            print(f'Processed {line_count} lines.')
+        moss = v_instances.mean()
+        moss = v_instances.std()
+
+
     def get_train_data(self):
 
         #each instance has id, sentence, v, a, d
@@ -25,7 +53,6 @@ class Parse_data:
                     print(f'Column names are {", ".join(row)}')
                     line_count += 1
                 else:
-                    print(f'\t{row[0]} works in the {row[1]} department, and was born in {row[2]}.')
                     if not row[0].startswith(SemEval_prefix):
                         instance = {
                             "id": row[0],
