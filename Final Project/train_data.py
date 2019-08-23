@@ -12,15 +12,17 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 class EmoBankDatabase(Dataset):
     """Face Landmarks dataset."""
 
-    def __init__(self, reader_path, writer_path, raw_information_path, sem2007_paths):
-      parse_data_instance = Parse_data(reader_path, writer_path, raw_information_path, sem2007_paths)
+    def __init__(self, file_path, emotions_path):
+      parse_data_instance = Parse_data(file_path, emotions_path)
       self.par_data = parse_data_instance.get_train_data()
 
     def __len__(self):
         return len(self.par_data)
 
     def __getitem__(self, idx):
-        return self.par_data[idx]["text"], torch.tensor([self.par_data[idx]["v"], self.par_data[idx]["a"], self.par_data[idx]["d"]])
+        item = self.par_data.iloc[idx]
+        return item.text, torch.tensor([item.V, item.A, item.D])
+
 
 ##########################################################################
 
@@ -70,16 +72,46 @@ def get_all_hidden_states(x, model):
 
 
 
+def Train_Net(my_net, trainloader, criterion, tokenizer):
+    optimizer = torch.optim.SGD(my_net.parameters(), lr=0.01, momentum=0.9)
+
+    # training loop
+    for epoch in range(1):
+
+        running_loss = 0.0
+        for i, data in enumerate(trainloader, 0):
+            # get the inputs
+
+            inputs, labels = data
+            labels = labels.to(device)
+            embedded_input = [torch.tensor([tokenizer.encode(text)]).to(device) for text in inputs]
+
+            # zero the parameter gradients
+            optimizer.zero_grad()
+
+            # forward + backward + optimize
+            outputs = my_net(embedded_input)
+            loss = criterion(outputs, labels)
+            print("loss is {}".format(loss))
+            loss.backward()
+            optimizer.step()
+
+            # print statistics
+            running_loss += loss.item()
+            if i % 200 == 0 and i != 0:  # print every 2000 mini-batches
+                print('[%d, %5d] loss: %.3f' %
+                      (epoch + 1, i + 1, running_loss / 200))
+                running_loss = 0.0
+
+
 ##########################################################################
 
 
 
 ########################################################################## Set  basic parameters
 
-reader_path = "./corpus/reader.csv"
-writer_path = "./corpus/writer.csv"
-raw_path = "./corpus/raw.csv"
-sem2007_paths = "./affectivetext_test.emotions.gold"
+file_path = "./emobank.csv"
+emotions_path = "././affectivetext_test.emotions.csv"
 
 
 
@@ -104,7 +136,7 @@ model_class, tokenizer_class, pretrained_weights = MODELS[0]
 
 def main():
     ## Dataset
-    emobank_dataset_training = EmoBankDatabase(reader_path, writer_path, raw_path, sem2007_paths)
+    emobank_dataset_training = EmoBankDatabase(file_path , emotions_path)
 
     dataloader_training = DataLoader(emobank_dataset_training, batch_size=4,
                             shuffle=True, num_workers=4)
@@ -118,9 +150,6 @@ def main():
     model = EmobankFineTuningModule(bert_model)
     model.to(device)
     tokenizer = tokenizer_class.from_pretrained(pretrained_weights)
-
-
-
 
     Train_Net(model, dataloader_training, criterion, tokenizer)
 

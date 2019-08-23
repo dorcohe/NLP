@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d322664f-848a-4b70-811a-4a1b5bc5e40b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/EmoBank.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final Project/parse_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Project/parse_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final Project/train_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Project/train_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/affectivetext_test.emotions.gold" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,22 +15,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/_utils.py">
+        <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/nn/modules/module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5865">
-              <caret line="368" selection-start-line="368" selection-end-line="368" />
-              <folding>
-                <element signature="e#10690#11489#0" />
-              </folding>
+            <state relative-caret-position="263">
+              <caret line="547" selection-start-line="547" selection-end-line="547" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/nn/modules/module.py">
+        <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="431" selection-start-line="431" selection-end-line="431" />
+            <state relative-caret-position="619">
+              <caret line="368" selection-start-line="368" selection-end-line="368" />
+              <folding>
+                <element signature="e#10690#11489#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,19 +45,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1201">
-              <caret line="1134" selection-start-line="1134" selection-end-line="1134" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Final Project/parse_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="67" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="67" />
+            <state relative-caret-position="476">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -64,8 +56,56 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Final Project/train_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="520">
+              <caret line="153" selection-start-line="153" selection-end-line="153" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/codecs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="309" selection-start-line="309" selection-end-line="309" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/utils/data/_utils/fetch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/utils/data/_utils/worker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="179" selection-start-line="179" selection-end-line="179" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/utils/data/sampler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/pandas/core/indexing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="532" selection-start-line="532" selection-end-line="532" />
             </state>
           </provider>
         </entry>
@@ -87,7 +127,6 @@
       <find>get_test_data</find>
       <find>BertTokenizer</find>
       <find>instances</find>
-      <find>EmoBankDatabase</find>
       <find>EmobankFineTuningModule</find>
       <find>freeze_support</find>
       <find>device</find>
@@ -100,7 +139,14 @@
       <find>criterion</find>
       <find>model_class</find>
       <find>Parse_data</find>
+      <find>parse_data_instance</find>
+      <find>Acephalous-Cant-believe_3215_3283</find>
+      <find>500</find>
+      <find>SemEval_500</find>
+      <find>10</find>
       <find>Train_Net</find>
+      <find>self.</find>
+      <find>EmoBankDatabase</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,8 +164,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2560" />
-    <option name="y" value="121" />
+    <option name="x" value="-599" />
+    <option name="y" value="349" />
     <option name="width" value="2576" />
     <option name="height" value="1456" />
   </component>
@@ -140,6 +186,12 @@
               <item name="EmoBank" type="462c0819:PsiDirectoryNode" />
               <item name="Final Project" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="EmoBank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmoBank" type="462c0819:PsiDirectoryNode" />
+              <item name="Final Project" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -154,6 +206,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\IDCMaster\DeepLearning\project\EmoBank\Final Project" />
       <recent name="C:\IDCMaster\DeepLearning\project\EmoBank" />
     </key>
   </component>
@@ -169,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train_data">
+  <component name="RunManager" selected="Python.train_data (1)">
     <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="EmoBank" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -212,6 +265,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train_data (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="EmoBank" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final Project/train_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="train_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="EmoBank" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,6 +309,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train_data (1)" />
         <item itemvalue="Python.train_data" />
         <item itemvalue="Python.Test" />
         <item itemvalue="Python.parse_data" />
@@ -264,16 +339,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2552" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980299" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980299" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32969603" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38737336" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38737336" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969603" />
@@ -290,9 +365,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Final Project/parse_data.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="31" />
+          <url>file://$PROJECT_DIR$/Final Project/train_data.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -312,13 +387,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/encodings/cp1252.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -343,13 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5236">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/pytorch_transformers/tokenization_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
@@ -366,7 +427,6 @@
     </entry>
     <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/utils/data/dataloader.py" />
     <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/nn/functional.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/utils/data/sampler.py" />
     <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/multiprocessing/spawn.py" />
     <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/nn/modules/linear.py" />
     <entry file="file://$PROJECT_DIR$/Test.py">
@@ -416,27 +476,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5865">
-          <caret line="368" selection-start-line="368" selection-end-line="368" />
-          <folding>
-            <element signature="e#10690#11489#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final Project/parse_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="67" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1201">
           <caret line="1134" selection-start-line="1134" selection-end-line="1134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final Project/raw.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="23" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final Project/reader.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final Project/writer.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final Project/Data/train.tsv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final Project/Data/dev.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="62" lean-forward="true" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final Project/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/encodings/cp1252.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final Project/emobank.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="5194" column="12" selection-start-line="5194" selection-start-column="1" selection-end-line="5194" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/pandas/core/internals/construction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1277">
+          <caret line="611" selection-start-line="611" selection-end-line="611" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/pandas/core/indexing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="532" selection-start-line="532" selection-end-line="532" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final Project/affectivetext_test.emotions.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6828">
+          <caret line="563" selection-start-line="563" selection-end-line="563" />
         </state>
       </provider>
     </entry>
@@ -447,17 +557,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/utils/data/sampler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/utils/data/_utils/worker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="179" selection-start-line="179" selection-end-line="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/utils/data/_utils/fetch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="368" selection-start-line="368" selection-end-line="368" />
+          <folding>
+            <element signature="e#10690#11489#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final Project/parse_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/envs/EmoBank/Lib/site-packages/torch/nn/modules/module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="431" selection-start-line="431" selection-end-line="431" />
+        <state relative-caret-position="263">
+          <caret line="547" selection-start-line="547" selection-end-line="547" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Final Project/train_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="520">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
