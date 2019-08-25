@@ -2,6 +2,8 @@ import csv
 SemEval_prefix = "SemEval_"
 import pandas as pd
 import numpy as np
+import pandas as pd
+from sklearn import preprocessing
 
 class Parse_data:
 
@@ -29,31 +31,42 @@ class Parse_data:
         train_instances = list(range(len(self.train_instances)))
         self.train_instances.reindex(train_instances)
 
+        self.normalize_data()
+
 
     def normalize_data(self):
 
-        #each instance has id, sentence, v, a, d
-        v_instances = []
-        a_instances = []
-        d_instances = []
-        with open(self.file_path) as csv_file:
-            csv_reader = csv.reader(csv_file)
-            line_count = 0
+        #Train
+        mean = self.train_instances.mean()
+        std = self.train_instances.std()
 
-            #row is in the form: 0: id, 1:v, 2:a, 3:d, 4:stdV, 5:stdA, 6:stdD, 7:N
-            for row in csv_reader:
-                if line_count == 0:
-                    print(f'Column names are {", ".join(row)}')
-                    line_count += 1
-                else:
-                    if not row[0].startswith(SemEval_prefix):
-                            v_instances.append(float(row[1]))
-                            a_instances.append(float(row[2]))
-                            d_instances.append(float(row[3]))
-                    line_count += 1
-            print(f'Processed {line_count} lines.')
-        moss = v_instances.mean()
-        moss = v_instances.std()
+        current_v = self.train_instances["V"]
+        normalized_v = (current_v - mean["V"]) / std["V"]
+        self.train_instances["V"] = normalized_v
+
+        current_a = self.train_instances["A"]
+        normalized_a = (current_a - mean["A"]) / std["A"]
+        self.train_instances["A"] = normalized_a
+
+        current_d = self.train_instances["D"]
+        normalized_d = (current_d - mean["D"]) / std["D"]
+        self.train_instances["D"] = normalized_d
+
+        #Test
+        mean = self.test_instances.mean()
+        std = self.test_instances.std()
+
+        current_v = self.test_instances["V"]
+        normalized_v = (current_v - mean["V"]) / std["V"]
+        self.test_instances["V"] = normalized_v
+
+        current_a = self.test_instances["A"]
+        normalized_a = (current_a - mean["A"]) / std["A"]
+        self.test_instances["A"] = normalized_a
+
+        current_d = self.test_instances["D"]
+        normalized_d = (current_d - mean["D"]) / std["D"]
+        self.test_instances["D"] = normalized_d
 
 
     def get_train_data(self):
